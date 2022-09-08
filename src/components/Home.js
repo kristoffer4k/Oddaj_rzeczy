@@ -1,3 +1,4 @@
+import React from 'react';
 import '../scss/Home.scss';
 import HomeHeader from './HomeHeader';
 import HomeThreeColumns from './HomeThreeColumns';
