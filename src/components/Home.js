@@ -6,15 +6,16 @@ import HomeAboutUs from './HomeAboutUs';
 import HomeWhoWeHelp from './HomeWhoWeHelp';
 import HomeContactUs from './HomeContactUs';
 
+
 function Home(){
     return (
-        <div className='Home'>
-        <HomeHeader />
-        <HomeThreeColumns />
-        <HomeSimpleSteps />
-        <HomeAboutUs />
-        <HomeWhoWeHelp />
-        <HomeContactUs />
+        <div className='home'>
+            <HomeHeader />
+            <HomeThreeColumns />
+            <HomeSimpleSteps />
+            <HomeAboutUs />
+            <HomeWhoWeHelp />
+            <HomeContactUs />
         </div>
     )
 }
