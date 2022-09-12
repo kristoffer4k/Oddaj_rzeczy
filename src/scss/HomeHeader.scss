@@ -1,0 +1,57 @@
+@import './main';
+
+.header {
+    margin-right: 142px;
+    
+    .nav-pages {
+        margin-top: 42px;
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 14px;
+            padding: 9px 10px;
+            color: $dark-grey-color;
+        }
+        
+        :last-child {
+        border: 0.75px solid $yellow-color;
+    }
+    }
+
+    
+
+    .nav-home {
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 17px;
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 18px;
+            color: $dark-grey-color;
+            padding: 9px 20px;    
+        }
+
+        :first-child {
+            border: 0.75px solid $dark-grey-color;
+        }
+
+        :last-child {
+            padding-right: 0;
+        }
+    }
+
+    .image {
+        top: 0px;
+        left: -483px;
+        width: 1368px;
+        height: 963px;
+        background: transparent url('../assets/Home-Hero-Image.jpg') 0% 0% no-repeat padding-box;
+        overflow: visible;
+    }
+}
