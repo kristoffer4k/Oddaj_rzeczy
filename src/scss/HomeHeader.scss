@@ -1,59 +1,90 @@
 @import "./main";
 
 .header {
-  margin-right: 142px; 
+  margin-right: 142px;
   display: flex;
-  flex-direction: row; 
-
-  .nav {
-    width: 873px;
-    background: transparent;
-    overflow: hidden;
-    .nav-pages {
-      margin-top: 42px;
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-        text-decoration: none;
-        list-style: none;
-        font-size: 14px;
-        padding: 9px 10px;
-        color: $dark-grey-color;
-      }
-
-      :last-child {
-        border: 0.75px solid $yellow-color;
-      }
-    }
-
-    .nav-home {
-      height: 42px;
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 17px;
-
-      a {
-        text-decoration: none;
-        list-style: none;
-        font-size: 18px;
-        color: $dark-grey-color;
-        padding: 9px 20px;
-      }
-
-      :first-child {
-        border: 0.75px solid $dark-grey-color;
-      }
-
-      :last-child {
-        padding-right: 0;
-      }
-    }
-  }
+  flex-direction: row;
 
   .image {
     width: 885px;
     height: 963px;
-    background: transparent url("../assets/Home-Hero-Image.jpg") no-repeat -483px 0;
+    background: transparent url("../assets/Home-Hero-Image.jpg") no-repeat -483px
+      0;
+    margin-right: 62px;
+  }
+
+  .content {
+
+    .nav {
+      width: 873px;
+      background: transparent;
+      overflow: hidden;
+      .nav-pages {
+        margin-top: 42px;
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+          text-decoration: none;
+          list-style: none;
+          font-size: 14px;
+          padding: 9px 10px;
+          color: $dark-grey-color;
+        }
+
+        :last-child {
+          border: 0.75px solid $yellow-color;
+        }
+      }
+
+      .nav-home {
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 17px;
+
+        a {
+          text-decoration: none;
+          list-style: none;
+          font-size: 18px;
+          color: $dark-grey-color;
+          padding: 9px 20px;
+        }
+
+        :first-child {
+          border: 0.75px solid $dark-grey-color;
+        }
+
+        :last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .help {
+        margin-top: 210px;
+        width: 674px;
+        color: $dark-grey-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1 {
+            font-size: 38px;
+            text-align: center;
+            font-weight: 400;
+            line-height: 55px;
+            letter-spacing: -0.76px;
+            margin-bottom: 25px;
+
+        }
+
+        .decoration {
+            width: 253px;
+            height: 33px;
+            background: url('../assets/Decoration.svg');
+            text-align: center;
+        }
+    }
   }
 }
