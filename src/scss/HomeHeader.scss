@@ -14,7 +14,6 @@
   }
 
   .content {
-
     .nav {
       width: 873px;
       background: transparent;
@@ -62,29 +61,51 @@
     }
 
     .help {
-        margin-top: 210px;
-        width: 674px;
-        color: $dark-grey-color;
+      margin-top: 210px;
+      width: 674px;
+      color: $dark-grey-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 38px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: -0.76px;
+        margin-bottom: 25px;
+      }
+
+      .decoration {
+        width: 253px;
+        height: 33px;
+        background: url("../assets/Decoration.svg");
+        text-align: center;
+      }
+
+      .buttons {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        h1 {
-            font-size: 38px;
-            text-align: center;
-            font-weight: 400;
-            line-height: 55px;
-            letter-spacing: -0.76px;
-            margin-bottom: 25px;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-top: 65px;
+        width: 674px;
 
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          text-align: center;
+          color: $dark-grey-color;
+          width: 310px;
+          height: 120px;
+          font-size: 36px;
+          font-weight: 300;
+          border: 0.75px solid $dark-grey-color;
         }
-
-        .decoration {
-            width: 253px;
-            height: 33px;
-            background: url('../assets/Decoration.svg');
-            text-align: center;
-        }
+      }
     }
   }
 }

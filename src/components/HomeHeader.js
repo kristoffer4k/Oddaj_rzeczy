@@ -1,4 +1,3 @@
-import React from 'react';
 import '../scss/HomeHeader.scss';
 import { HashLink as Link} from 'react-router-hash-link';
 

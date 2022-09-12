@@ -1,0 +1,45 @@
+@import "./main";
+
+.columns {
+    height: 384px;
+    background: url("../assets/Background-Three-Columns.png");
+    color: $dark-grey-color;
+
+    .columns-list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        .column {
+            margin-top: 46px;
+            
+            h2 {
+                font-size: 69px;
+                font-weight: 300;
+            }
+
+            h3 {
+                font-size: 18px;
+                letter-spacing: -0.36px;
+                margin-top: 10px;
+                margin-bottom: 28px;
+            }
+
+            p{
+                font-size: 16px;
+                letter-spacing: -0.36px;
+                width: 334px;   
+            }
+
+        }
+        .column-first {
+            margin-left: 142px;
+        }
+
+        .column-third {
+            margin-right: 142px;
+        }
+    }
+}
