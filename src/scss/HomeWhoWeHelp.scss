@@ -1,0 +1,37 @@
+@import "./main";
+
+.help {
+    height: 862px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-grey-color;
+
+    .menu {
+        margin-top: 50px;
+        margin-bottom: 70px;
+
+        span {
+            padding: 23px 42px;
+            border: 0.75px solid white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        :hover {
+            border: 0.75px solid $dark-grey-color;
+        }
+    }
+
+    .foundation {
+        
+
+        p {
+            width: 640px;
+            height: 94px;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 66px;
+        }
+    }
+}
