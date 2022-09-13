@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     color: $dark-grey-color;
+    margin-bottom: 80px;
 
     .menu {
         margin-top: 50px;
@@ -23,8 +24,11 @@
         }
     }
 
-    .foundation {
-        
+    .foundations {
+        width: 1344px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         p {
             width: 640px;
@@ -32,6 +36,60 @@
             font-size: 22px;
             text-align: center;
             margin-bottom: 66px;
+            display: flex;
+            
+        }
+
+        .foundation {
+            width: 1344px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .name {
+            font-size: 26px;
+        }
+
+        .target {
+            font-size: 18px;
+        }
+
+        .stuff {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .first-foundation {
+            margin-bottom: 34px;
+            padding-bottom: 31px;
+            border-bottom: 0.75px solid $dark-grey-color;
+        }
+
+        .second-foundation {
+            margin-bottom: 34px;
+            padding-bottom: 31px;
+            border-bottom: 0.75px solid $dark-grey-color;
+        }
+
+        .numbers {
+            margin-top: 63px;
+            
+            span {
+                padding: 13px 15px;
+                border: 0.75px solid white;
+                font-size: 18px;
+            }
+            :hover {
+                border: 0.75px solid $dark-grey-color;
+                cursor: pointer;
+        }
+        
         }
     }
 }
