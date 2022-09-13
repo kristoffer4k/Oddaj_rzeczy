@@ -3,7 +3,7 @@ import '../scss/HomeContactUs.scss';
 
 function HomeContactUs() {
     return (
-        <section className='ontact' id='home-ccontact'>
+        <section className='contact' id='home-ccontact'>
 
         </section>
     )

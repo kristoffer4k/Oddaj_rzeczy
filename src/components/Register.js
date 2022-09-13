@@ -3,7 +3,7 @@ import '../scss/Register.scss';
 
 function Register() {
     return (
-        <section className='register' id='register'>
+        <section className='register' id='register-id'>
             <p>Strona rejestracji</p>
         </section>
     )

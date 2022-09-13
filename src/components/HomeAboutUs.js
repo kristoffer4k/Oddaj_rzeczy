@@ -15,7 +15,6 @@ function HomeAboutUs() {
                     <div className='signature' />
                 </div>
             </div>
-
             <div className='people' />
         </section>
     )

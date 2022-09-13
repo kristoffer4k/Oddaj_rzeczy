@@ -4,8 +4,6 @@ import HomeSimpleSteps from './HomeSimpleSteps';
 import HomeAboutUs from './HomeAboutUs';
 import HomeWhoWeHelp from './HomeWhoWeHelp';
 import HomeContactUs from './HomeContactUs';
-import '../scss/Home.scss';
-
 
 function Home(){
     return (
