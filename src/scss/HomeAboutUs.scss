@@ -1,0 +1,48 @@
+@import "./main";
+
+.about {
+    height: 935px;
+    width: 100%;
+    display: flex;
+
+    .description {
+        height: 935px;
+        width: 50%;
+        background-color: $light-grey-color;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            margin-top: 186px;
+        }
+
+        .text {
+            width: 656.9px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            p {
+                letter-spacing: -0.6px;
+                font-size: 30px;
+                color: $dark-grey-color;
+                margin-top: 55px;
+            }
+
+            .signature {
+                width: 209.25px;
+                height: 148.84px;
+                margin-top: 40.09px;
+                background: url(../assets/Signature.svg);
+            }
+        }
+    }
+
+    .people {
+        height: 935px;
+        width: 50%;
+        background: url('../assets/People.jpg');
+    }
+}
