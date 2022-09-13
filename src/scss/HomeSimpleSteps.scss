@@ -1,2 +1,90 @@
 @import "./main";
 
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 80px;
+
+    .steps-columns {
+        margin-top: 34px;
+        margin-bottom: 35px;
+        height: 325px;
+        width: 100%;
+        background-color: $light-grey-color;
+        display: flex;
+        list-style: none;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 72px;
+            color: $dark-grey-color;
+
+            .icon {
+                width: 83px;
+                height: 83px;
+                margin-bottom: 8px;
+            }
+
+            .first-icon {
+                background: url("../assets/Icon-1.svg")
+            }
+
+            .second-icon {
+                background: url("../assets/Icon-2.svg")
+            }
+
+            .third-icon {
+                background: url("../assets/Icon-3.svg")
+            }
+
+            .fourth-icon {
+                background: url("../assets/Icon-4.svg")
+            }
+
+            .tittle {
+                font-size: 18px;
+            }
+    
+            .line {
+                width: 70px;
+                height: 2.5px;
+                margin: 8.5px 0;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+        }
+        
+        .first-column {
+            margin-right: 172px;
+            margin-left: 414px;
+        }
+
+        .second-column {
+            margin-right: 171px;
+        }
+
+        .third-column {
+            margin-right: 173px;
+        }
+
+        .fourth-column {
+            margin-right: 414px;
+        }
+    }
+}
+
+
+
+
+
+.third-column {
+    display: flex;
+    flex-direction: column;
+}
