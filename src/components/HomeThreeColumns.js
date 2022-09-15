@@ -3,21 +3,20 @@ function HomeThreeColumns() {
         <section className='columns' id='home-columns'>
             <ul className='columns-list'>
                 <li className='column column-first'>
-                    <h2>10</h2>
-                    <h3>ODDANYCH WORKÓW</h3>
+                    <h3>10</h3>
+                    <h4>ODDANYCH WORKÓW</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
                 </li>
                 <li className='column column-second'>
-                    <h2>5</h2>
-                    <h3>WSPARTCYH ORGANIZACJI</h3>
+                    <h3>5</h3>
+                    <h4>WSPARTCYH ORGANIZACJI</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
                 </li>
                 <li className='column column-third'>
-                    <h2>7</h2>
-                    <h3>ZORGANIZOWANYCH ZBIÓREK</h3>
+                    <h3>7</h3>
+                    <h4>ZORGANIZOWANYCH ZBIÓREK</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
                 </li>
-            
             </ul>    
         </section>
     )

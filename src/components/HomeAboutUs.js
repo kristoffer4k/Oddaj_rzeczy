@@ -1,10 +1,12 @@
+import Decor from './elements/Decor';
+import Header from './elements/Header';
+
 function HomeAboutUs() {
     return (
         <section className='about' id='home-about'>
-            
             <div className='description'>
-                <h1>O nas</h1>
-                <div className='decoration' />
+            <Header contents='O nas' />
+                <Decor />
                 <div className='text'>
                     <p>Nori grape silver beet broccoli kombu beet 
                        greens fava bean potato quandong celery. 

@@ -1,6 +1,6 @@
 function HomeContactUs() {
     return (
-        <section className='contact' id='home-ccontact'>
+        <section className='contact' id='home-contact'>
 
         </section>
     )

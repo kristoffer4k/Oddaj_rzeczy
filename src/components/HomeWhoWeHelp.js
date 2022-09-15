@@ -1,8 +1,11 @@
+import Decor from './elements/Decor';
+import Header from './elements/Header';
+
 function HomeWhoWeHelp() {
     return (
         <section className='help' id='home-help'>
-            <h1>Komu pomagamy?</h1>
-            <div className='decoration'></div>
+            <Header contents='Komu pomagamy?' />
+            <Decor />
             <div className='menu'>
                 <span>Fundacjom</span>
                 <span>Oragnizacjom pozarządowym</span>
@@ -39,14 +42,12 @@ function HomeWhoWeHelp() {
                     </div>
                     <span className='stuff'>ubrania, jedzenie, ciepłe koce</span>
                 </div>
-
                 <div className='numbers'>
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>
                 </div>
             </div>
-
         </section>
     )
 }

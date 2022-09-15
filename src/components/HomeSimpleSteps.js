@@ -1,10 +1,12 @@
 import { HashLink as Link} from 'react-router-hash-link';
+import Decor from './elements/Decor';
+import Header from './elements/Header';
 
 function HomeSimpleSteps() {
     return (
         <section className='steps' id='home-steps'>
-            <h1>Wystarczą 4 proste kroki</h1>
-            <div className='decoration'></div>
+            <Header contents='Wystarczą 4 proste kroki' />
+            <Decor />
             <ul className='steps-columns'>
                 <li className='column first-column'>
                     <div className='icon first-icon'></div>
