@@ -1,5 +1,3 @@
-import '../scss/HomeAboutUs.scss';
-
 function HomeAboutUs() {
     return (
         <section className='about' id='home-about'>

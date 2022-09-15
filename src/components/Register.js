@@ -1,6 +1,3 @@
-import React from 'react';
-import '../scss/Register.scss';
-
 function Register() {
     return (
         <section className='register' id='register-id'>

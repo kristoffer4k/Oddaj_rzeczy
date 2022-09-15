@@ -1,5 +1,19 @@
 @import './settings/fonts';
 @import './settings/colors';
+@import './elements/Button';
+@import './elements/Nav';
+@import './elements/Decor';
+@import './elements/Header';
+@import './HomeHeader';
+@import './HomeThreeColumns';
+@import './HomeSimpleSteps';
+@import './HomeWhoWeHelp';
+@import './HomeAboutUs';
+@import './HomeContactUs';
+@import './Login';
+@import './Logout';
+@import './Register';
+@import './Form';
 
 * {
   margin: 0;
@@ -27,16 +41,3 @@ h1 {
   text-align: center;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  text-align: center;
-  color: $dark-grey-color;
-  width: 310px;
-  height: 120px;
-  font-size: 36px;
-  font-weight: 300;
-  border: 0.75px solid $dark-grey-color;
-}

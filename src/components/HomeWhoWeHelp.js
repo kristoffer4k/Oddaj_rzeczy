@@ -1,5 +1,3 @@
-import '../scss/HomeWhoWeHelp.scss';
-
 function HomeWhoWeHelp() {
     return (
         <section className='help' id='home-help'>

@@ -1,0 +1,13 @@
+.button {
+  width: 310px;
+  height: 120px;
+  font-size: 36px;
+  font-weight: 300;
+  border: 0.75px solid $dark-grey-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-grey-color;
+}

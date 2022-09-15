@@ -1,5 +1,3 @@
-import '../scss/HomeThreeColumns.scss';
-
 function HomeThreeColumns() {
     return (
         <section className='columns' id='home-columns'>

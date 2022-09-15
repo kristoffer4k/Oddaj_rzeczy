@@ -1,4 +1,3 @@
-import '../scss/HomeSimpleSteps.scss';
 import { HashLink as Link} from 'react-router-hash-link';
 
 function HomeSimpleSteps() {
