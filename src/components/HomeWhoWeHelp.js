@@ -7,6 +7,7 @@ function HomeWhoWeHelp() {
             <Header contents='Komu pomagamy?' />
             <Decor />
             <div className='menu'>
+                
                 <span>Fundacjom</span>
                 <span>Oragnizacjom pozarządowym</span>
                 <span>Lokalnym zbiórkom</span>
