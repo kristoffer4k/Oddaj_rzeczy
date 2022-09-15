@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Fundacja “Dbam o Zdrowie”",
+        "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {
+        "id": 2,
+        "name": "Fundacja “Dla dzieci”",
+        "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+        "needs": "ubrania, meble, zabawki"
+    },
+    {
+        "id": 3,
+        "name": "Fundacja “Bez domu”",
+        "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+        "needs": "ubrania, jedzenie, ciepłe koce"
+    },
+    {
+        "id": 4,
+        "name": "Fundacja “Pomagamy”",
+        "description": "Cel i misja: Pomoc osobom chorym.",
+        "needs": "leki, ubrania, pieniądze"
+    },
+    {
+        "id": 5,
+        "name": "Fundacja “Miś”",
+        "description": "Cel i misja: Pomoc dzieciom z domów dziecka.",
+        "give": "ubrania, zabawki, jedzenie"
+    },
+    {
+        "id": 6,
+        "name": "Fundacja “Senior”",
+        "description": "Cel i misja: Pomoc starszym osobom.",
+        "needs": "ubrania, meble, leki, pieniądze, jedzenie"
+    },
+    {
+        "id": 7,
+        "name": "Fundacja “Przyszłość”",
+        "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+        "needs": "artykuły szkolne, plecaki, ubrania"
+    },
+    {
+        "id": 8,
+        "name": "Wakacje”",
+        "description": "Cel i misja: Organizacja wakacji dla dzieci.",
+        "needs": "pieniądze, akcesoria do nauki pływania"
+    },
+    {
+        "id": 9,
+        "name": "Fundacja “Zima”",
+        "description": "Cel i misja: Pomoc w ogrzaniu starych domów.",
+        "needs": "węgiel, pieniądze"
+    }
+]
