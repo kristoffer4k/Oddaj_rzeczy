@@ -10,9 +10,7 @@ function HomeContactUs() {
                     <Header contents='Skontaktuj się z nami' />
                     <Decor />
                 </div>
-                <div className='contact-form'>
-                    <ContactForm />
-                </div>
+                <ContactForm />
             </div>    
             <div className='footer'>
                 <span>Copyright by Coders Lab</span>

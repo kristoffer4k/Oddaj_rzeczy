@@ -1,0 +1,54 @@
+.form {
+  width: 528px;
+  height: 327px;
+  border: 1px solid black;
+  color: $dark-grey-color;
+  display: flex;
+  flex-direction: column;
+
+    span {
+        font-size: 16px;
+    }
+  .personal-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .name {
+        width: 256px;
+        height: 62px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email {
+        width: 256px;
+        height: 62px;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 44px;
+
+    .input {
+        height: 97px;
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+        background: transparent;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+  }
+}
