@@ -27,11 +27,11 @@ function ContactForm() {
                 className="input"
                 placeholder="Krzysztof"
                 {...register("name", {
-                  required: "Imię jest wymagane",
-                  minLength: {
-                    value: 2,
-                    message: "Minimalna ilość znaków wynosi 2",
-                  },
+                required: "Imię jest wymagane",
+                pattern: {
+                  value: /^[a-zA-Z]+$/,
+                  message: "Niepoprawne imię",
+                },
                 })}
                 onKeyUp={() => {
                   trigger("name");
@@ -64,7 +64,7 @@ function ContactForm() {
             <span>Wpisz swoją wiadomość</span>
             <textarea
               className="input"
-              placeholder="Your message"
+              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
               {...register("message", {
                 required: "Wiadomość jest wymagana",
                 minLength: {
