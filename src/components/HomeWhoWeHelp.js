@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Pagination from './Pagination';
-import Decor from './elements/Decor';
 import Header from './elements/Header';
+import Decor from './elements/Decor';
 import fundData from '../data/foundations.json';
 import orgData from '../data/organizations.json';
 import colData from '../data/collections.json';
