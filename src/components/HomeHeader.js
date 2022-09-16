@@ -9,7 +9,7 @@ function HomeHeader() {
             <div className='image' />
             <div className='content'>
                 <Nav />
-                <div className='help'>
+                <div className='start-help'>
                     <h1>Zacznij pomagać!<br></br>Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <Decor />
                     <div className='buttons'>

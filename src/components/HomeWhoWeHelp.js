@@ -1,56 +1,50 @@
+import { useState } from 'react';
+import Pagination from './Pagination';
 import Decor from './elements/Decor';
 import Header from './elements/Header';
+import fundData from '../data/foundations.json';
+import orgData from '../data/organizations.json';
+import colData from '../data/collections.json';
+ 
+export default function HomeWhoWeHelp() {
 
-function HomeWhoWeHelp() {
+    const key = ["foundations", "organizations", "collections"]
+    const [isShown, setIsShown] = useState("foundations");
+    const [data, setData] = useState(fundData);
+
+    const handleClick = (key) => {
+        if (key === "foundations") {
+            setIsShown(key)
+            setData(fundData)
+        } 
+        if (key === "organizations"){
+            setIsShown(key)
+            setData(orgData)
+        }
+        if (key === "collections") {
+            setIsShown(key)
+            setData(colData)
+        }
+    }
+
+    const text = {
+        fundText: "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        orgText: "Wszystkie najważniejsze organizacje pozarządowe w jednym miejscu. Dzięki wieloletniej współpracy gwarantujemy uczciwość i transparentność.",
+        localText: "Spontaniczne zbiórki oraganizowane przez naszych zaufanych wolontariuszy. Sprawdź czego obecnia najabardziej potrzeba i wspomóż potrzebujących."
+    }
+
     return (
         <section className='help' id='home-help'>
-            <Header contents='Komu pomagamy?' />
-            <Decor />
-            <div className='menu'>
-                
-                <span>Fundacjom</span>
-                <span>Oragnizacjom pozarządowym</span>
-                <span>Lokalnym zbiórkom</span>
-            </div>
-            <div className='foundations'>
-                <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, 
-                    z którymi współpracujemy. Możesz sprawdzić czym się zajmują, 
-                    komu pomagają i czego potrzebują.
-                </p>
-                <div className='first-foundation foundation'>
-                    <div className='left-column'>
-                        <span className='name'>Fundacja “Dbam o Zdrowie”</span>
-                        <span className='target'>Cel i misja: Pomoc osobom 
-                        znajdującym się w trudnej sytuacji życiowej.</span>
-                    </div>
-                    <span className='stuff'>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
+                <Header contents='Komu pomagamy?' />
+                <Decor />
+                <div className='menu'> 
+                    <button id="button" type="button" onClick={() => handleClick(key[0])} className={`help-button ${isShown === "foundations" ? "choose-button" : ""}`}>Fundacjom</button>
+                    <button id="button" type="button" onClick={() => handleClick(key[1])} className={`help-button ${isShown === "organizations" ? "choose-button" : ""}`}>Organizacjom pozarządowym</button>
+                    <button type="button" onClick={() => handleClick(key[2])} className="help-button">Lokalnym zbiórkom</button>
                 </div>
-
-                <div className='second-foundation foundation'>
-                    <div className='left-column'>
-                        <span className='name'>Fundacja “Dla dzieci”</span>
-                        <span className='target'>Cel i misja: Pomoc dzieciom 
-                        z ubogich rodzin.</span>
-                    </div>
-                    <span className='stuff'>ubrania, meble, zabawki</span>
-                </div>
-
-                <div className='third-foundation foundation'>
-                    <div className='left-column'>
-                        <span className='name'>Fundacja “Bez domu”</span>
-                        <span className='target'>Cel i misja: Pomoc dla 
-                        osób nie posiadających miejsca zamieszkania.</span>
-                    </div>
-                    <span className='stuff'>ubrania, jedzenie, ciepłe koce</span>
-                </div>
-                <div className='numbers'>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-            </div>
+                {isShown === "foundations" && (<Pagination data={data} text={text.fundText} />)}
+                {isShown === "organizations" && (<Pagination data={data} text={text.orgText} />)}
+                {isShown === "collections" && (<Pagination data={data} text={text.localText} />)}
         </section>
-    )
+    );
 }
-
-export default HomeWhoWeHelp;

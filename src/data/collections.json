@@ -3,18 +3,18 @@
         "id": 1,
         "name": "Zbiórka “Wietrzenie szafy””",
         "description": "Zbiórka zalegających w szafir ubrań.",
-        "give": "ubrania, paski do spodni, torebki, plecaki"
+        "needs": "ubrania, paski do spodni, torebki, plecaki"
     },
     {
         "id": 2,
         "name": "Zbiórka “Liczy się każdy grosz”",
         "description": "Zbiórka pieniędzy dla ubogich.",
-        "give": "Pieniądze, wartościowe przedmioty"
+        "needs": "pieniądze, wartościowe przedmioty"
     },
     {
         "id": 3,
         "name": "Zbiórka “Daj gryza”",
         "description": "Zbiórka jedzenia dla potrzebujących.",
-        "give": "Jedzenie, napoje"
+        "needs": "jedzenie, napoje"
     }
 ]

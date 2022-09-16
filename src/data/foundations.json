@@ -27,7 +27,7 @@
         "id": 5,
         "name": "Fundacja “Miś”",
         "description": "Cel i misja: Pomoc dzieciom z domów dziecka.",
-        "give": "ubrania, zabawki, jedzenie"
+        "needs": "ubrania, zabawki, jedzenie"
     },
     {
         "id": 6,
@@ -43,7 +43,7 @@
     },
     {
         "id": 8,
-        "name": "Wakacje”",
+        "name": "Fundacja ”Wakacje”",
         "description": "Cel i misja: Organizacja wakacji dla dzieci.",
         "needs": "pieniądze, akcesoria do nauki pływania"
     },

@@ -3,25 +3,25 @@
         "id": 1,
         "name": "Organizacja “Wolna Ukraina”",
         "description": "Zbiórka pieniędzy dla wojska.",
-        "needs": "Pieniądze, kamizelki kuloodporne"
+        "needs": "pieniądze, kamizelki kuloodporne"
     },
     {
         "id": 2,
         "name": "Organizacja “Mruczek”",
-        "description": "Wspieranie bezpańkich kotów.",
-        "needs": "Sucha karma, mleko"
+        "description": "Wspieranie bezdomnych kotów.",
+        "needs": "sucha karma, mleko"
     },
     {
         "id": 3,
         "name": "Organizacja “Czyste powietrze”",
         "description": "Walka ze smogiem.",
-        "needs": "Pieniądze"
+        "needs": "pieniądze"
     },
     {
         "id": 4,
-        "name": "Organizacja “Helthy life”",
+        "name": "Organizacja “Healthy life”",
         "description": "Propagowanie zdrowego trybu życia.",
-        "needs": "Buty do biegania, ubrania sportowe"
+        "needs": "buty do biegania, ubrania sportowe"
     },
     {
         "id": 5,
