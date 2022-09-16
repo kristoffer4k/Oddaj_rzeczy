@@ -1,0 +1,18 @@
+.contact {
+    position: relative;
+    height: 1026px;
+    width: 100%;
+    
+    &:before {
+        position: absolute;
+        content: '';
+        background: url("../assets/Background-Contact-Form.jpg") no-repeat;
+        background-size: cover;
+        opacity: 0.25;  
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+

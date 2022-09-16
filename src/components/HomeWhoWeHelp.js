@@ -35,8 +35,10 @@ export default function HomeWhoWeHelp() {
 
     return (
         <section className='help' id='home-help'>
-                <Header contents='Komu pomagamy?' />
-                <Decor />
+                <div className='help-header'>
+                    <Header contents='Komu pomagamy?' />
+                    <Decor />
+                </div>
                 <div className='menu'> 
                     <button id="button" type="button" onClick={() => handleClick(key[0])} className={`help-button ${isShown === "foundations" ? "choose-button" : ""}`}>Fundacjom</button>
                     <button id="button" type="button" onClick={() => handleClick(key[1])} className={`help-button ${isShown === "organizations" ? "choose-button" : ""}`}>Organizacjom pozarządowym</button>
