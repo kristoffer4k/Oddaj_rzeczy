@@ -8,8 +8,8 @@ function HomeContactUs() {
                 <div className='contact-header'>    
                     <Header contents='Skontaktuj się z nami' />
                     <Decor />
-                    <div className='contact-form'>Formularz</div>
                 </div>
+                <div className='contact-form'>Formularz</div>
             </div>    
             <div className='footer'>
                 <span>Copyright by Coders Lab</span>
