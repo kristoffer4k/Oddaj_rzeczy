@@ -1,5 +1,6 @@
 import Header from './elements/Header';
 import Decor from './elements/Decor';
+import ContactForm from './ContactForm'
 
 function HomeContactUs() {
     return (
@@ -9,7 +10,9 @@ function HomeContactUs() {
                     <Header contents='Skontaktuj się z nami' />
                     <Decor />
                 </div>
-                <div className='contact-form'>Formularz</div>
+                <div className='contact-form'>
+                    <ContactForm />
+                </div>
             </div>    
             <div className='footer'>
                 <span>Copyright by Coders Lab</span>
