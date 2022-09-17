@@ -13,7 +13,7 @@ function HomeContactUs() {
                 <ContactForm />
             </div>    
             <div className='footer'>
-                <span>Copyright by Coders Lab</span>
+                <span>Copyright by Krzysztof Korbiński</span>
                 <div className='icons'>
                     <div className='facebook'></div>
                     <div className='instagram'></div>
