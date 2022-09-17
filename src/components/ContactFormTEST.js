@@ -2,42 +2,38 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 function ContactForm() {
-  
-  const [success, setSuccess] = useState("");
 
-  function sendToServer(data) {
-    
-    return fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((response) => response.json())
-      .then(setSuccess(true))
-  }
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+  // e.preventDefault();
+  const data = {name, email, message}
+
+  fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+    method: 'POST',
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  }).then(() => {
+    console.log('Wiadomość wysłana')
+  })
+}
 
   const {
     register,
-    handleSubmit,
     formState: { errors },
     reset,
     trigger,
   } = useForm();
 
   const onSubmit = (data) => {
-    sendToServer(data);
+    console.log(data);
     reset();
   };
 
   return (
     <section className="form-section">
-      <div className="contact-form-message">
-        {success === true && (
-          <span className="success-message">
-            Wiadomość została wysłana!<br></br>Wkrótce się skontaktujemy.
-          </span>
-        )}
-      </div>
       <div className="form-container">
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="personal-data">
@@ -45,8 +41,10 @@ function ContactForm() {
               <span>Wpisz swoje imię</span>
               <input
                 type="text"
+                // value={name}
                 className="input"
                 placeholder="Krzysztof"
+                onChange={(e) => setName(e.target.value)}
                 {...register("name", {
                   required: "Imię jest wymagane",
                   pattern: {
@@ -65,8 +63,10 @@ function ContactForm() {
               <span>Wpisz swój e-mail</span>
               <input
                 type="text"
+                // value={email}
                 className="input email-input"
                 placeholder="abc@xyz.pl"
+                onChange={(e) => setEmail(e.target.value)}
                 {...register("email", {
                   required: "E-mail jest wymagany",
                   pattern: {
@@ -85,15 +85,18 @@ function ContactForm() {
             <span>Wpisz swoją wiadomość</span>
             <textarea
               className="input"
-              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat."
+              // value={message}
+              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              onChange={(e) => setMessage(e.target.value)}
               {...register("message", {
                 required: "Wiadomość jest wymagana",
                 minLength: {
                   value: 120,
                   message: "Minimalna ilość znaków wynosi 120",
+                },
+                maxLength: {
+                  value: 500,
+                  message: "Maksymalna ilość znaków wynosi 500",
                 },
               })}
               onKeyUp={() => {

@@ -2,7 +2,9 @@ import Header from './elements/Header';
 import Decor from './elements/Decor';
 import ContactForm from './ContactForm'
 
+
 function HomeContactUs() {
+
     return (
         <section className='contact' id='home-contact'>
             <div className='right-column'>        
