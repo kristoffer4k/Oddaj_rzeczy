@@ -1,0 +1,47 @@
+.login {
+    display: flex;
+    flex-direction: column;
+
+    .navigation {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 139px;
+        margin-bottom: 123px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .login-form {
+            width: 348.5px;
+            height: 235px;
+            background: $light-grey-color;
+            margin-top: 60px;
+            margin-bottom: 40px;        
+        }
+
+        .buttons {
+            height: 42px;
+            width: 503.8px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 17px;
+        
+            a {
+                text-decoration: none;
+                list-style: none;
+                font-size: 18px;
+                color: $dark-grey-color;
+                padding: 9px 20px;
+                border: 0.75px solid white;
+            }
+        
+            :hover {
+                border: 0.75px solid $dark-grey-color;
+            }
+        }
+    }
+}
