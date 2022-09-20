@@ -6,8 +6,8 @@ function ContactForm() {
   const [success, setSuccess] = useState("");
 
   function sendToServer(data) {
-    
-    return fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+    console.log(data, "in sendToServer")
+     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
@@ -24,7 +24,8 @@ function ContactForm() {
     trigger,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = data => {
+    console.log(data);
     sendToServer(data);
     reset();
   };
@@ -39,7 +40,7 @@ function ContactForm() {
         )}
       </div>
       <div className="form-container">
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
+        <form onSubmit={handleSubmit(data => onSubmit(data))} className="form">
           <div className="personal-data">
             <div className="form-group name">
               <span>Wpisz swoje imię</span>
