@@ -29,10 +29,19 @@ function LoginForm() {
                 message: "Podany email jest nieprawidłowy!",
               },
             })}
-            onKeyUp={() => {
-              trigger("email");
-            }}
+            // onKeyUp={() => {
+            //   trigger("email");
+            // }}
           />
+          <button
+        type="button"
+        onClick={async () => {
+          await trigger("email");
+          // const result = await trigger("lastName", { shouldFocus: true }); allowed to focus input
+        }}
+      >
+        Trigger
+      </button>
           {errors.email && <p className="error">{errors.email.message}</p>}
         </div>
 
