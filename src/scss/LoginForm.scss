@@ -15,8 +15,10 @@
 
     .error {
         color: $red-color;
+        width: 250px;
         font-size: 14px;
-        margin-top: 5px;;
+        margin-top: -2px;
+        border-top: 2px solid $red-color;
       }
 
     .form-group {
@@ -29,5 +31,6 @@
 
     .email {
         margin-bottom: 31px;
+        margin-top: 8px;
     }
 }
