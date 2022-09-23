@@ -1,14 +1,19 @@
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { HashLink as Link } from "react-router-hash-link";
 
 function LoginForm() {
   const {
     register,
+    watch,
     handleSubmit,
     formState: { errors },
     reset,
     trigger,
   } = useForm();
+
+  const password = useRef({});
+  password.current = watch("password", "");
 
   const onSubmit = (data) => {
     console.log(data);
@@ -38,7 +43,7 @@ function LoginForm() {
           <div className="form-group password">
             <span>Hasło</span>
             <input
-              type="text"
+              type="password"
               className="input"
               {...register("password", {
                 required: "Podane hasło jest za krótkie!",
@@ -54,14 +59,12 @@ function LoginForm() {
           <div className="form-group password2">
             <span>Powtórz hasło</span>
             <input
-              type="text"
+              type="password"
               className="input"
               {...register("password2", {
-                required: "Nieprawidłowe hasło!",
-                minLength: {
-                  value: "6",
-                  message: "Nieprawidłowe hasło!",
-                },
+                required: "Hasło nie jest takie samo!",
+                validate: value =>
+                value === password.current || "Hasło nie jest takie samo!"
               })}
             />
             {errors.password2 && <p className="error">{errors.password2.message}</p>}
