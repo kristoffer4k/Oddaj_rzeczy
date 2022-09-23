@@ -2,7 +2,6 @@ import LoginForm from './LoginForm'
 import Nav from './elements/Nav'
 import Header from './elements/Header';
 import Decor from './elements/Decor';
-import { HashLink as Link} from 'react-router-hash-link';
 
 function Login() {
     return (
@@ -15,10 +14,6 @@ function Login() {
                 <Decor />
                 <div className='login-form'>
                     <LoginForm />
-                </div>
-                <div className='buttons'>
-                    <Link to='/register'>Załóż konto</Link>
-                    <Link to='/login'>Zaloguj się</Link>
                 </div>
             </div>
         </section>

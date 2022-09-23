@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { HashLink as Link } from "react-router-hash-link";
 
 function LoginForm() {
   const {
@@ -16,54 +17,56 @@ function LoginForm() {
 
   return (
     <section className="form-section">
-      <form onSubmit={handleSubmit(onSubmit)} className="form">
-        <div className="form-group email">
-          <span>Email</span>
-          <input
-            type="text"
-            className="input email-input"
-            {...register("email", {
+      <div className="form-upper">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+          <div className="form-group email">
+            <span>Email</span>
+            <input
+              type="text"
+              className="input email-input"
+              {...register("email", {
                 required: "Podany email jest nieprawidłowy!",
                 pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: "Podany email jest nieprawidłowy!",
-              },
-            })}
-            // onKeyUp={() => {
-            //   trigger("email");
-            // }}
-          />
-          <button
-        type="button"
-        onClick={async () => {
-          await trigger("email");
-          // const result = await trigger("lastName", { shouldFocus: true }); allowed to focus input
-        }}
-      >
-        Trigger
-      </button>
-          {errors.email && <p className="error">{errors.email.message}</p>}
-        </div>
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Podany email jest nieprawidłowy!",
+                },
+              })}
+            />
+            {errors.email && <p className="error">{errors.email.message}</p>}
+          </div>
 
-        <div className="form-group name">
-          <span>Hasło</span>
-          <input
-            type="text"
-            className="input"
-            {...register("name", { 
+          <div className="form-group name">
+            <span>Hasło</span>
+            <input
+              type="text"
+              className="input"
+              {...register("name", {
                 required: "Podane hasło jest za krótkie!",
                 minLength: {
-                value: 6,
-                message: "Podane hasło jest za krótkie!",
-              },
-            })}
-            onKeyUp={() => {
-              trigger("name");
+                  value: 6,
+                  message: "Podane hasło jest za krótkie!",
+                },
+              })}
+            />
+            {errors.name && <p className="error">{errors.name.message}</p>}
+          </div>
+        </form>
+      </div>
+      <div className="buttons">
+        <div className="buttons-inner">
+          <Link to="/register">Załóż konto</Link>
+          <button
+            type="button"
+            className="validation-button"
+            onClick={async () => {
+              await trigger("email");
+              await trigger("name");
             }}
-          />
-          {errors.name && <p className="error">{errors.name.message}</p>}
+          >
+            Zaloguj się
+          </button>
         </div>
-      </form>
+      </div>
     </section>
   );
 }
