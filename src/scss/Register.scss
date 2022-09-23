@@ -1,0 +1,24 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    
+
+    .navigation {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 139px;
+        margin-bottom: 123px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .register-form {
+            height: 235px;
+            margin-top: 60px;       
+        }
+    }
+}

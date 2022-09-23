@@ -17,7 +17,7 @@ function LoginForm() {
 
   return (
     <section className="form-section">
-      <div className="form-upper">
+      <div className="form-upper2">
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="form-group email">
             <span>Email</span>
@@ -50,20 +50,38 @@ function LoginForm() {
             />
             {errors.password && <p className="error">{errors.password.message}</p>}
           </div>
+
+          <div className="form-group password2">
+            <span>Powtórz hasło</span>
+            <input
+              type="text"
+              className="input"
+              {...register("password2", {
+                required: "Nieprawidłowe hasło!",
+                minLength: {
+                  value: "6",
+                  message: "Nieprawidłowe hasło!",
+                },
+              })}
+            />
+            {errors.password2 && <p className="error">{errors.password2.message}</p>}
+          </div>
+
         </form>
       </div>
       <div className="buttons">
         <div className="buttons-inner">
-          <Link to="/register">Załóż konto</Link>
-          <button
+        <Link to="/login">Zaloguj się</Link>
+        <button
             type="button"
             className="validation-button"
             onClick={async () => {
               await trigger("email");
               await trigger("password");
+              await trigger("password2");
             }}
           >
-            Zaloguj się
+            Załóż konto
           </button>
         </div>
       </div>

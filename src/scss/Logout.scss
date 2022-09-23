@@ -1,0 +1,33 @@
+.logout {
+  display: flex;
+  flex-direction: column;
+
+  .navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 139px;
+    margin-bottom: 123px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      width: 414px;
+    }
+
+    .start-button {
+      text-decoration: none;
+      list-style: none;
+      font-size: 18px;
+      color: $dark-grey-color;
+      padding: 9px 20px;
+      border: 0.75px solid $dark-grey-color;
+      margin-top: 35px;
+    }
+  }
+}
